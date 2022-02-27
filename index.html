@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title goes here</title>
+     <title>Dom Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
@@ -9,21 +9,68 @@
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/forms.css" />
  </head>
- <body>
-     <header>
-     <h1>Title goes here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" class=""">Name of project goes here</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-     </header>
-     
-   <main class="wrapper">
+ <style>
+  /* div#play span{
+    background-color: yellow;
+  } */
+</style>
+</head>
+<body>
+   <header>
+   <h1>DOM Play</h1>
+   </header>
+   
+ <main class="wrapper">
+  <p>This page uses JavaScript to allow a user to click on the name of an actor and highlight their lines in a play. This page uses data-attributes and loops through and an anonymous function to loop through a nodelist and compare data-attributes to highlight or unhighlight text.</p>
+   <div id="play">
+    <p>INT. SPA. DAY</p>
+    <p>A steamy, underground mineral baths. Miniature tiles of
+      various shapes and intricate patterns cover every inch
+      of the walls, floors, and ceiling. Distant voices echo
+      faintly through succeeding chambers.
+      A long row of identical, adjacent cubicles each contains
+      a blue tub and is tiled in a more recent, utilitarian
+      style. The author soaks in one of them. He shakes salts
+      from a carton into the water and stirs it.
+      A voice interrupts from off-screen:</p>
+    <p><span data-actor="MR. MOUSTAFA">MR. MOUSTAFA: I admire your work</span></p>
+    <p>The author hesitates. He looks around. He is not sure
+      which general direction the voice came from.</p>
+    <p><span data-actor="AUTHOR">AUTHOR: I beg your pardon?</span></p>
+    <p><span data-actor="MR. MOUSTAFA">MR. MOUSTAFA: I said, I know and admire your wonderful
+work.</span></p>
+    <p><span data-actor="AUTHOR">AUTHOR: Thank you most kindly, sir.</span></p>
+    <p><span data-actor="MR. MOUSTAFA">MR. MOUSTAFA: Did M. Jean have a word or two to share
+      with you about the aged proprietor of
+      this establishment?</span></p>
+    <p><span data-actor="AUTHOR">AUTHOR: I must confess, sir, I did, myself,
+      inquire about you.</span></p>
+    <p><span data-actor="MR. MOUSTAFA">MR. MOUSTAFA: He’s perfectly capable, of course, M. Jean -- but we can’t claim he’s a firstor, in earnest, even second-rate
+     concierge.
+      (sadly)
+      But there it is. Times have changed </span></p>
+    <p><span data-actor="AUTHOR">AUTHOR: The thermal baths are very beautiful.</span></p>
+    <p><span data-actor="MR. MOUSTAFA">MR. MOUSTAFA: They were, in their first condition. It
+    couldn’t be maintained, of course. Too
+      decadent for current tastes -- but I love
+      it all, just the same. This enchanting,
+      old ruin.</span></p>
+     <p> Mr. Moustafa looks wistfully around the vaulted space.
+The author squints, holds up a finger, and asks
+gingerly:</p>
+    <p><span data-actor="AUTHOR">AUTHOR: How did you come to buy it, if I may ask? The Grand Budapest.</span></p>
+    <p>Pause. Mr. Moustafa disappears back behind the partition. The author looks slightly puzzled. Mr. Moustafa immediately reappears, but he has turned himself around in the tub and is now facing the opposite direction so he can more comfortably rest in view. He props his elbow onto the edge of the bath. His eyes twinkle as he says: </p>
+    <p><span data-actor="MR. MOUSTAFA">MR. MOUSTAFA: I didn’t.</span></p>
+    <p>At this moment, one of the matrons of the hammam blasts
+      the fat, now naked, businessman with a jet of icy water.
+      He hollers as he is sprayed-down. Silence.
+      Mr. Moustafa and the author look back to each other.
+      Each has raised an eyebrow. They both smile slightly.</p>
+    <p><span data-actor="MR. MOUSTAFA">MR. MOUSTAFA: If you’re not merely being polite (and you must tell me if that’s the case), but if it genuinely does interest you: may I invite you to dine with me tonight, and it will be my pleasure and, indeed, my privilege to tell you -- “my” story. Such as it is.</span></p>
+   
+   </div>
+   <footer>
        
-       <h2 class="subheader">Title goes here </h2>
-       
-       <p>Content Goes here </p>
      <footer>
       <p><small>&copy; 2021 by 
           Your Name Here, All Rights Reserved ~ 
@@ -32,6 +79,7 @@
      </p>
     </footer>
   </main>
+  <script src="js/dom-play.js"></script>
   <script src="js/main.js"></script> 
  </body>
 </html>
